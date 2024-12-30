@@ -1,0 +1,12 @@
+footer {
+    display: flex;            /* Use Flexbox */
+    justify-content: center;  /* Center content horizontally */
+    align-items: center;      /* Center content vertically */
+    height: 100px;            /* Adjust the height as needed */
+    background-color: #2f2f2f  ; /* Set a background color for the footer */
+    color:#fffffff4      /* Set text color */
+  }
+  
+  footer .footer-content {
+    text-align: center;       /* Ensure the text is centered */
+  }

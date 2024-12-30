@@ -1,0 +1,136 @@
+/* cart.css */
+
+/* Main Cart Container */
+.cart-page {
+  width: 80%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart-page h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Empty Cart Message */
+.cart-page p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Cart Item List */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Cart Item */
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 10px 0;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Cart Item Image */
+.cart-item-image {
+  width: 60px; /* Ajustez la largeur selon vos préférences */
+  height: 60px; /* Ajustez la hauteur selon vos préférences */
+  object-fit: cover; /* Garantit que l'image garde son rapport d'aspect sans déformation */
+  margin-right: 15px;
+  border-radius: 4px;
+}
+
+/* Cart Item Details */
+.cart-item div {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.cart-item strong {
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+
+.cart-item span {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Remove Button */
+.product-button {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product-button:hover {
+  background-color: #c0392b;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .cart-page {
+    width: 95%;
+  }
+
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cart-item-image {
+    width: 50px; /* Ajustez la largeur pour les petits écrans */
+    height: 50px; /* Ajustez la hauteur pour les petits écrans */
+    margin-bottom: 10px;
+  }
+
+  .cart-item strong {
+    font-size: 1rem;
+  }
+
+  .cart-item span {
+    font-size: 0.9rem;
+  }
+
+  .product-button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+.create-order {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.create-order-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.create-order-button:hover {
+  background-color: #218838;
+}
